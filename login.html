@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/lib.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/login.css">
+
+  <link rel="stylesheet" href="css/fonts/entypo.css">
+
+</head>
+
+<body class="grey lighten-2 cover">
+
+
+  <header class="roboto flex justify-between align-center shadow-2">
+
+    <div class="left">
+      <a href="index.html">
+        <i class="icon-lamp"></i>
+      </a>
+    </div>
+
+    <div class="right">
+      <a href="signup.html" class="btn btn-outline-danger waves-effect btn-sm">signup</a>
+    </div>
+
+  </header>
+
+
+
+  <div class="content flex align-center justify-center ">
+
+    <div class="login shadow-2 flex column align-center justify-center white">
+
+    <h5 class="h5 uppercase red-text">
+      <i class="icon-login"></i> Login
+    </h5>
+
+    <!-- Medium input -->
+    <input class="form-control" id="logEmail" type="text" placeholder="Email ">
+
+
+   <!-- Small input -->
+    <input class="form-control " id="logPassword" type="password" placeholder="Password">
+
+    <a class="btn btn-red " onclick="login()"><i class="icon-lock"></i> login</a>
+
+    <p>
+      Don't have an account? <a href="signup.html" class="red-text">Signup</a>
+    </p>
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB2B8yEUwrTNEUZlihk5zZFxyYhuoy7gds",
+    authDomain: "copes-bc2bd.firebaseapp.com",
+    databaseURL: "https://copes-bc2bd.firebaseio.com",
+    projectId: "copes-bc2bd",
+    storageBucket: "copes-bc2bd.appspot.com",
+    messagingSenderId: "1018166831030"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/log.js"></script>
+  <script type="text/javascript" src="js/lib.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* Your custom styles */
+header{
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 1000;
+}
+
+header div{
+  padding: 10px 15px;
+}
+
+header .left a{
+  color: #ff3547;
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+header .right a{
+  padding-right: 30px;
+  color: #ff3547;
+  font-size: .9em;
+}
+
+.landing{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/code2.jpg');
+}
+
+.landing .content{
+  width: 100vw;
+  height: 100vh;
+  padding: 200px 0 150px;
+  background-color: rgba(0,0,0,.85);
+}
+
+.landing .content h1{
+  text-align: center;
+  color: #fff;
+}
+
+.landing .content span{
+  text-align: center;
+  padding: 20px 300px;
+  color: #c0c0c0;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing .content h1{
+    font-size:2.8em;
+  }
+  .landing .content span{
+    padding: 10px 50px;
+    font-size: 1em;
+  }
+  .landing .content{
+    padding: 180px 0 130px;
+  }
+}
+
+
+.timer{
+  padding: 20px 0;
+}
+
+.timer .days{
+  margin: 15px 35px;
+}
+
+.programs{
+  padding: 20px;
+}
+
+.programs .card{
+  width: 45%;
+  margin: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .programs{
+    padding: 10px;
+  }
+  .programs .card{
+    width: 100%;
+    margin: 0;
+  }
+  .timer .days{
+    transform:scale(.7,.7);
+    -webkit-transform:scale(.7,.7);
+    margin: 5px 8px;
+  }
+}
+
+.other{
+  padding: 40px;
+}
+.other .h4{
+  padding-bottom:25px; 
+}
+
+.other p{
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+footer{
+  padding: 20px;
+  font-size: .9em;
+  text-align: center;
+  background-color: #444;
+}

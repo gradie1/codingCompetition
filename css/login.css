@@ -1,0 +1,50 @@
+body{
+	background-image: url('../img/code2.jpg');
+	height: 100vh;
+}
+
+.content{
+	padding-top: 120px;
+}
+.login{	
+	padding: 40px 80px;
+}
+.login h5{
+	text-align: center;
+	padding-bottom: 30px;
+	font-weight: 600;
+}
+
+.login input{
+	margin-bottom: 30px;
+	font-size: .9em;
+	padding: 10px 15px;
+	color: #ff4444;
+}
+
+.login input::placeholder{
+	color: #ff4444;
+}
+
+.login .btn{
+	width: 100%;
+}
+
+.login p{
+	font-size: .9em;
+	padding: 25px 0 0;
+}
+
+.wrapper div{
+	margin:0 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.login{	
+		padding: 40px 40px;
+	}
+	.wrapper div{
+		width: 100%;
+		margin: 0;
+	}
+}

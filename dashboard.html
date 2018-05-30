@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="css/monokai.css">
+
+  <link rel="stylesheet" href="css/lib.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+
+  <link rel="stylesheet" href="css/fonts/entypo.css">
+
+</head>
+
+<body class=" cover">
+
+
+  <!-- Notification -->
+  <div class="notification green transition">
+    <i class="icon-check"></i>
+    <span>Code submited</span>
+    <a class="black cancel-notification" style="margin:0 0 0 15px;">
+      <i class="icon-cancel" style="margin:0 "></i>
+    </a>
+  </div>
+
+
+
+  <header class="roboto flex justify-between align-center shadow-2">
+
+    <div class="left">
+      <a href="index.html">
+        <i class="icon-lamp"></i>
+      </a>
+    </div>
+
+    <span class="red-text" id="username" style="text-transform:capitalize;">
+      
+    </span>
+
+    <div class="right">
+      <a href="#" class="btn btn-outline-danger waves-effect btn-sm" onclick="logout()">
+        <i class="icon-logout"></i>
+        logout
+      </a>
+    </div>
+
+  </header>
+
+
+
+
+  <div class="content flex wrap flex align-start justify-between">
+
+
+    <div class="notice grey  white-text" style="width:100%;">
+<!-- 
+      <h5 class="h5">
+        Instructions
+      </h5> -->
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      </p>
+
+    </div>
+
+
+
+    <div class="board white">
+
+      <ul class="nav md-pills nav-justified pills-secondary white shadow-1">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel14" role="tab">Question</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel11" role="tab">Board</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel13" role="tab">Help</a>
+      </li>
+    </ul>
+
+    <!-- Tab panels -->
+    <div class="tab-content">
+
+      <!--Panel 1-->
+      <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+          reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+          porro voluptate odit minima.</p>
+
+        </div>
+        <!--/.Panel 1-->
+
+            <!--Panel 3-->
+            <div class="tab-pane fade" id="panel13" role="tabpanel">
+              <br>
+
+              <p>amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                porro voluptate odit minima.</p>
+
+              </div>
+              <!--/.Panel 3-->
+
+              <!--Panel 4-->
+              <div class="tab-pane fade" id="panel14" role="tabpanel">
+                <br>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                    porro voluptate odit minima.</p>
+
+                  </div>
+                  <!--/.Panel 4-->
+
+                </div>
+
+    </div>
+
+
+
+    <div class="editor flex column justify-center align-center shadow-1 white">
+
+
+
+       <!--Dropdown primary-->
+        <div class="dropdown" style="width:100%">
+
+            <!--Trigger-->
+            <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+            <span class="lng">JAVASCRIPT</span>
+            
+
+            <!--Menu-->
+            <div class="dropdown-menu dropdown-primary">
+                <a class="dropdown-item">JAVASCRIPT</a>
+                <a class="dropdown-item" >PYTHON 3</a>
+                <a class="dropdown-item" >JAVA</a>
+                <a class="dropdown-item">PHP</a>
+                <a class="dropdown-item" >C++</a>
+                <a class="dropdown-item" >C#</a>
+                <a class="dropdown-item" >C</a>
+            </div>
+        </div>
+        <!--/Dropdown primary-->
+                
+
+
+
+
+
+      <div class="template " id="template">
+
+        
+
+      </div>
+      <div class="flex justify-end" style="width:100%">
+        <a href="#" class="btn btn-danger" onclick="submitCode()">Submit</a>
+      </div>
+
+
+
+
+
+
+   </div>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB2B8yEUwrTNEUZlihk5zZFxyYhuoy7gds",
+    authDomain: "copes-bc2bd.firebaseapp.com",
+    databaseURL: "https://copes-bc2bd.firebaseio.com",
+    projectId: "copes-bc2bd",
+    storageBucket: "copes-bc2bd.appspot.com",
+    messagingSenderId: "1018166831030"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+
+
+              <!-- SCRIPTS -->
+              <!-- JQuery -->
+              <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+              <script type="text/javascript" src="js/lib.js"></script>
+
+              <script type="text/javascript" src="js/codemirror.js"></script>
+              <script type="text/javascript" src="mode/javascript/javascript.js"></script>
+              <script type="text/javascript" src="js/dash.js"></script>
+
+              
+              
+              <!-- Bootstrap tooltips -->
+              <script type="text/javascript" src="js/popper.min.js"></script>
+              <!-- Bootstrap core JavaScript -->
+              <script type="text/javascript" src="js/bootstrap.min.js"></script>
+              <!-- MDB core JavaScript -->
+              <script type="text/javascript" src="js/mdb.min.js"></script>
+            </body>
+
+            </html>

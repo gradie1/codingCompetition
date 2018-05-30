@@ -1,0 +1,51 @@
+body{
+	background:url('../img/code2.jpg');
+}
+
+.content{
+	height: 100vh;
+	padding: 80px 20px;
+	background-color: rgba(250,250,250,.91);
+}
+
+.notice{
+	padding: 10px;
+}
+
+.notice p{
+	font-size: .9em;
+	margin: 0;
+}
+
+.board{
+	width: 49%;
+}
+
+.nav-item .active{
+	color: #fff;
+	background-color: #ff4444;
+}
+
+.tab-pane{
+	padding: 10px 20px;
+	font-size: 1em;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.12), 0 5px 10px 0 rgba(0,0,0,.16);
+}
+
+.editor{
+	width: 49%;
+}
+.editor .template{
+	width: 100%;
+	padding: 10px;
+	height: 320px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.board{
+		width: 100%;
+	}	
+	.editor{
+		width: 100%;
+	}
+}
